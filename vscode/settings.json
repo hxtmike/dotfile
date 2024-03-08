@@ -1,0 +1,133 @@
+{
+    // Basics
+    "window.zoomLevel": -1,
+    "search.showLineNumbers": true,
+    "workbench.colorTheme": "Monokai",
+    "workbench.tree.enableStickyScroll": true,
+        // changes and save
+    "workbench.editor.highlightModifiedTabs": true,
+        // font
+        // disable aliasing in Mac
+    // "workbench.fontAliasing": "antialiased",
+
+    // Files
+    "files.autoSave": "afterDelay",
+    "files.insertFinalNewline": true,
+
+    // Editor
+    "editor.tabSize": 4,
+    "editor.minimap.enabled": true,
+    "editor.wordWrap": "on",
+    "editor.lineNumbers": "relative",
+    "editor.rulers": [80,120],
+    "editor.stickyScroll.enabled": true,
+    "editor.renderWhitespace": "all",
+    "editor.detectIndentation": true,
+    "editor.glyphMargin": true,
+        // suggestions
+    "editor.inlineSuggest.enabled": true,
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "on",
+        "strings": "on"
+    },
+
+        // diff editor
+    "diffEditor.ignoreTrimWhitespace": false,
+
+    // Terminal
+    "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.cursorStyle": "block",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.customGlyphs": true,
+    "terminal.integrated.stickyScroll.enabled": true,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu-20.04 (WSL)": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+
+            "args": [
+                "-d",
+                "Ubuntu-20.04"
+            ]
+        }
+    },
+    "terminal.integrated.profiles.osx": {
+        "zsh": {
+            "path": "/bin/zsh",
+            "args": [
+                "-l",
+                "-i"
+            ]
+        }
+    },
+    // git
+    "git.autofetch": true,
+    "git.untrackedChanges": "separate",
+
+    // python 
+        // all terminal setting will be only determined by the terminal 
+        // to avoid unnecessary misunderstanding
+    "python.terminal.activateEnvironment": false,
+    "python.terminal.activateEnvInCurrentTerminal": false,
+
+    // Notebook
+    "notebook.stickyScroll.enabled": true,
+    "notebook.lineNumbers": "on",
+    "notebook.insertFinalNewline": true,
+    "notebook.output.scrolling": true,
+
+    // vscode vim
+        // Basics
+    "vim.smartRelativeLine": true,
+    "vim.hlsearch": true,
+    "vim.highlightedyank.enable": true,
+
+        // keybinding
+    "vim.normalModeKeyBindings": [
+        {
+            "before":["<C-n>"],
+            "commands": [
+                ":nohl",
+            ]
+        },
+    ],
+
+        // Plugins
+    "vim.easymotion": true,
+    "vim.statusBarColorControl": true,
+        // This setting will be CONSTANTLY CHANGED BY 
+        // vim-airline feature of VIM EXTENSION!!!
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#ff4081",
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.debuggingForeground": "#ffffff"
+    },
+    "vim.surround": true,
+    "vim.camelCaseMotion.enable": true,
+    // // vim indent obj by default
+    // // vim commentary by default
+
+    // Other extensions
+    "workbench.editorAssociations": {
+        "file:/**/*.csv": "jupyter-data-wrangler"
+    },
+    
+}
