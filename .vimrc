@@ -10,6 +10,7 @@ set showcmd
 set mouse=a
 
 set encoding=utf-8  
+set fileformat=unix
 set t_Co=256
 
 " indentation

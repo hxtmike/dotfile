@@ -1,3 +1,7 @@
+# related to pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 if [[ $(uname) == "Darwin" ]]; then
     # Run the Homebrew shellenv command

@@ -13,6 +13,7 @@
     // Files
     "files.autoSave": "afterDelay",
     "files.insertFinalNewline": true,
+    "files.eol": "\n",
 
     // Editor
     "editor.tabSize": 4,
@@ -114,9 +115,9 @@
         // vim-airline feature of VIM EXTENSION!!!
     "workbench.colorCustomizations": {
         "editorRuler.foreground": "#ff4081",
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f",
+        "statusBar.background": "#007acc",
+        "statusBar.noFolderBackground": "#007acc",
+        "statusBar.debuggingBackground": "#007acc",
         "statusBar.foreground": "#ffffff",
         "statusBar.debuggingForeground": "#ffffff"
     },

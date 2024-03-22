@@ -71,12 +71,18 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    git 
-    macos 
-    direnv 
     zsh-autosuggestions
     zsh-syntax-highlighting
+    git 
+    direnv 
+    pyenv
 )
+
+if [[ "$(uname)" == "Darwin" ]]; then
+    plugins+=(macos)
+elif grep -qiE "microsoft|wsl" /proc/version &> /dev/null; then
+    alias ofd="explorer.exe ."
+fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,7 +118,3 @@ cl() {
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-eval "$(pyenv init -)"
-eval "$(direnv hook zsh)"
-# source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
