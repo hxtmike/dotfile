@@ -21,7 +21,7 @@ fi
 # check and isntall direnv
 if ! command -v direnv &> /dev/null; then
     export bin_path=/usr/bin
-    curl -sfL https://direnv.net/install.sh | bash
+    curl -sfL https://direnv.net/install.sh | sudo bash
 
     mkdir -p ~/.config/direnv
     touch ~/.config/direnv/direnv.toml
