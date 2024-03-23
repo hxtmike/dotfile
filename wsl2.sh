@@ -6,7 +6,6 @@ sudo apt-get install libssl-dev libffi-dev libncurses5-dev liblzma-dev zlib1g zl
 sudo apt-get install python-tk python3-tk tk-dev
 
 # check and install zsh-autosuggestion
-
 if [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]; then
     git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 fi
