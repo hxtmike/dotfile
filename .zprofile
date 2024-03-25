@@ -1,8 +1,4 @@
-# related to pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
+# related to homebrew/macos
 if [[ $(uname) == "Darwin" ]]; then
     # Run the Homebrew shellenv command
     eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -10,3 +6,8 @@ if [[ $(uname) == "Darwin" ]]; then
     export "C_INCLUDE_PATH=/usr/local/include"
     export "LIBRARY_PATH=/usr/local/lib"
 fi
+
+# related to pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
