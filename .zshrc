@@ -78,6 +78,7 @@ plugins=(
     pyenv
 )
 
+# open directory using file manager in different OS
 if [[ "$(uname)" == "Darwin" ]]; then
     plugins+=(macos)
 elif grep -qiE "microsoft|wsl" /proc/version &> /dev/null; then
@@ -101,7 +102,6 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 # custom functions
-
 cl() {
     builtin cd "$@";
     ls -lah
@@ -118,4 +118,6 @@ cl() {
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# load this script to have some local alias/functions
 source ~/.localrc
