@@ -1,4 +1,5 @@
-# related to homebrew/macos
+# related to homebrew/macOS
+# Homebrew env has to be loaded before others
 if [[ $(uname) == "Darwin" ]]; then
     # Run the Homebrew shellenv command
     eval "$(/opt/homebrew/bin/brew shellenv)"
