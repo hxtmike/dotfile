@@ -125,10 +125,5 @@
     "vim.camelCaseMotion.enable": true,
     // // vim indent obj by default
     // // vim commentary by default
-
-    // Other extensions
-    "workbench.editorAssociations": {
-        "file:/**/*.csv": "jupyter-data-wrangler"
-    }
     
 }
