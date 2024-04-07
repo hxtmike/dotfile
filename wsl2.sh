@@ -42,6 +42,8 @@ fi
     # Set '.python-version' file
         # pyenv local <version/venv>
 
+touch ~/.localrc
+
 BASEDIR="$(cd "$(dirname "$0")" && pwd)"
 
 typeset -A dirs_to_repos
