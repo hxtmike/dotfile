@@ -46,3 +46,6 @@ for dir repo in ${(kv)dirs_to_repos}; do
     fi
     ln -s "${BASEDIR}"/"$repo" "$dir"
 done
+
+# macos setting
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -boolean false # press and hold disable
