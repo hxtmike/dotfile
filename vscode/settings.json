@@ -1,6 +1,6 @@
 {
     // Basics
-    "window.zoomLevel": -1,
+    "window.zoomLevel": -2,
     "search.showLineNumbers": true,
     "workbench.colorTheme": "Monokai",
     "workbench.tree.enableStickyScroll": true,
@@ -103,9 +103,9 @@
         {
             "before":["<C-n>"],
             "commands": [
-                ":nohl",
+                ":nohl"
             ]
-        },
+        }
     ],
 
         // Plugins
@@ -122,7 +122,7 @@
         "statusBar.debuggingForeground": "#ffffff"
     },
     "vim.surround": true,
-    "vim.camelCaseMotion.enable": true,
+    "vim.camelCaseMotion.enable": true
     // // vim indent obj by default
     // // vim commentary by default
     
