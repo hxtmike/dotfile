@@ -141,7 +141,11 @@
         "statusBar.debuggingForeground": "#ffffff"
     },
     "vim.surround": true,
-    "vim.camelCaseMotion.enable": true
+    "vim.camelCaseMotion.enable": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.callArgumentNames": "partial",
+    "python.analysis.typeCheckingMode": "standard"
     // // vim indent obj by default
     // // vim commentary by default
     
