@@ -97,6 +97,10 @@
     "pylint.args": [
         "\"pylint.args\": [\"--disable=C0111\", \"--max-line-length=110\"]"
     ],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.inlayHints.callArgumentNames": "partial",
+    "python.analysis.typeCheckingMode": "standard",
     "python.terminal.activateEnvironment": false,
     "python.terminal.activateEnvInCurrentTerminal": false,
 
@@ -142,10 +146,12 @@
     },
     "vim.surround": true,
     "vim.camelCaseMotion.enable": true,
-    "python.analysis.autoImportCompletions": true,
-    "python.analysis.completeFunctionParens": true,
-    "python.analysis.inlayHints.callArgumentNames": "partial",
-    "python.analysis.typeCheckingMode": "standard"
+
+    // error lends
+    "errorLens.enabledDiagnosticLevels": [
+        "error",
+        "warning"
+    ]
     // // vim indent obj by default
     // // vim commentary by default
     
